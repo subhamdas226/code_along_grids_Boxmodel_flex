@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        body{
+            margin:10px;
+            font-family: verdana;
+
+        }
+        .container{
+            border: 5px solid #eee;
+            display: flex;
+            /*flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: baseline;
+            align-content: space-around;*/
+        }
+        .container>div{
+            padding: 10px;
+            text-align: center;
+            font-size: 2em;
+        }
+        .container>div:nth-child(1){
+            background-color: orangered;
+        }
+        .container>div:nth-child(2){
+            background-color: gold;`
+        }
+        .container>div:nth-child(3){
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <div>Home</div>
+        <div>About</div>
+        <div>Services</div>
+    </nav>
+</body>
+</html>
